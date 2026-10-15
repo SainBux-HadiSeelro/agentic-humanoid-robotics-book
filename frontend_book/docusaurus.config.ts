@@ -117,11 +117,6 @@ const config: Config = {
           type: 'search',
           position: 'right',
         },
-        {
-          href: 'https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
