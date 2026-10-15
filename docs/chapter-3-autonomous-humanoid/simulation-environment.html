@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-1.0.0 docs-doc-page docs-doc-id-chapter-3-autonomous-humanoid/simulation-environment" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Simulation Environment for VLA Testing | Autonomous Humanoid Robotics &amp; Physical AI</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/simulation-environment"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="1.0.0"><meta data-rh="true" name="docusaurus_tag" content="docs-default-1.0.0"><meta data-rh="true" name="docsearch:version" content="1.0.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-1.0.0"><meta data-rh="true" property="og:title" content="Simulation Environment for VLA Testing | Autonomous Humanoid Robotics &amp; Physical AI"><meta data-rh="true" name="description" content="The Importance of Simulation in VLA Development"><meta data-rh="true" property="og:description" content="The Importance of Simulation in VLA Development"><link data-rh="true" rel="icon" href="/agentic-humanoid-robotics-book/img/book-logo.svg"><link data-rh="true" rel="canonical" href="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/simulation-environment"><link data-rh="true" rel="alternate" href="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/simulation-environment" hreflang="en"><link data-rh="true" rel="alternate" href="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/simulation-environment" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://YOUR_APP_ID-dsn.algolia.net" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="/agentic-humanoid-robotics-book/blog/rss.xml" title="Autonomous Humanoid Robotics &amp; Physical AI RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/agentic-humanoid-robotics-book/blog/atom.xml" title="Autonomous Humanoid Robotics &amp; Physical AI Atom Feed">
+
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="Autonomous Humanoid Robotics &amp; Physical AI" href="/agentic-humanoid-robotics-book/opensearch.xml"><link rel="stylesheet" href="/agentic-humanoid-robotics-book/assets/css/styles.e8ff7a8f.css">
+<script src="/agentic-humanoid-robotics-book/assets/js/runtime~main.47a28171.js" defer="defer"></script>
+<script src="/agentic-humanoid-robotics-book/assets/js/main.c8e6db71.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/agentic-humanoid-robotics-book/img/book-logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/agentic-humanoid-robotics-book/"><div class="navbar__logo"><img src="/agentic-humanoid-robotics-book/img/book-logo.svg" alt="Robotics and Physical AI Handbook" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/agentic-humanoid-robotics-book/img/book-logo.svg" alt="Robotics and Physical AI Handbook" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/agentic-humanoid-robotics-book/docs/chapter-1-intro/practical-examples">Handbook &amp; Labs</a><a class="navbar__item navbar__link" href="/agentic-humanoid-robotics-book/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts="Meta+k"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="1.4"></circle><path d="m21 21-4.3-4.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div><a href="https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper"><div class="readabilityContainer_kfSk"><main class="theme-layout-main main_f1EL"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="menu menu--responsive thin-scrollbar sidebar_gi4H"><div class="menu__content sidebarMenu_wssH"><div class="sidebarHeader_d6YB"><button class="button button--secondary button--sm menu__button sidebarToggle_FiQH" type="button" aria-label="Collapse sidebar">☰</button></div><div class="sidebarItems_Ys5G"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/agentic-humanoid-robotics-book/docs/chapter-1-intro/practical-examples"><span title="Chapter 1: Introduction to Robotics" class="categoryLinkLabel_W154">Chapter 1: Introduction to Robotics</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/agentic-humanoid-robotics-book/docs/chapter-2-communication/nodes-topics-services"><span title="Chapter 2: Communication and Control" class="categoryLinkLabel_W154">Chapter 2: Communication and Control</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/agentic-humanoid-robotics-book/docs/chapter-3-python-urdf/python-rclpy"><span title="Chapter 3: Python and URDF" class="categoryLinkLabel_W154">Chapter 3: Python and URDF</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/agentic-humanoid-robotics-book/docs/setup-digital-twin"><span title="Module 2: Digital Twin (Gazebo &amp; Unity)" class="categoryLinkLabel_W154">Module 2: Digital Twin (Gazebo &amp; Unity)</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/agentic-humanoid-robotics-book/docs/chapter-1-isaac-sim/isaac-sim-introduction"><span title="Module 3: The AI-Robot Brain (NVIDIA Isaac™)" class="categoryLinkLabel_W154">Module 3: The AI-Robot Brain (NVIDIA Isaac™)</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/agentic-humanoid-robotics-book/docs/exercises"><span title="Practical Exercises" class="linkLabel_WmDU">Practical Exercises</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/agentic-humanoid-robotics-book/docs/complete-example-project"><span title="Complete Example Project: AI-Powered Humanoid Robot Navigation" class="linkLabel_WmDU">Complete Example Project: AI-Powered Humanoid Robot Navigation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/agentic-humanoid-robotics-book/docs/chapter-1-voice-to-action"><span title="Module 4: Vision-Language-Action (VLA) for Robotics" class="categoryLinkLabel_W154">Module 4: Vision-Language-Action (VLA) for Robotics</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/agentic-humanoid-robotics-book/docs/chapter-1-voice-to-action"><span title="Chapter 1: Voice-to-Action with Speech Recognition" class="categoryLinkLabel_W154">Chapter 1: Voice-to-Action with Speech Recognition</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/agentic-humanoid-robotics-book/docs/chapter-2-vision-language-action"><span title="Chapter 2: Vision-Language-Action and Cognitive Planning" class="categoryLinkLabel_W154">Chapter 2: Vision-Language-Action and Cognitive Planning</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid"><span title="Chapter 3: Capstone — The Autonomous Humanoid" class="categoryLinkLabel_W154">Chapter 3: Capstone — The Autonomous Humanoid</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid"><span title="Capstone — The Autonomous Humanoid" class="linkLabel_WmDU">Capstone — The Autonomous Humanoid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/simulation-environment"><span title="Simulation Environment for VLA Testing" class="linkLabel_WmDU">Simulation Environment for VLA Testing</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/capstone-project"><span title="Complete Autonomous Humanoid Capstone Project" class="linkLabel_WmDU">Complete Autonomous Humanoid Capstone Project</span></a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/agentic-humanoid-robotics-book/docs/chapter-1-intro/acceptance-tests"><span title="Assessment" class="categoryLinkLabel_W154">Assessment</span></a></div></li></div></div></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="readabilityContainer_kfSk"><div class="docItemWrapper_Jbac"><div class="docs-doc-page"><article class="articleCard_aLQE"><span class="theme-doc-version-badge badge badge--secondary">Version: 1.0.0</span><nav class="breadcrumbNav_Rql0" aria-label="Breadcrumb"><ol class="breadcrumbList_yi64"><li class="breadcrumbItem_hJlW"><a class="breadcrumbLink_Frb2" href="/agentic-humanoid-robotics-book/">Home</a></li><li class="breadcrumbItem_hJlW"><span class="breadcrumbSeparator_pcVl">/</span><span>Docs</span></li><li class="breadcrumbItem_hJlW"><span class="breadcrumbSeparator_pcVl">/</span><span>Chapter 3 Autonomous Humanoid</span></li><li class="breadcrumbItem_hJlW"><span class="breadcrumbSeparator_pcVl">/</span><span class="breadcrumbCurrent_Bhaq">Simulation Environment</span></li></ol></nav><div class="docItemContainer_c0TR"><div class="docItemCol_z5aJ"><div class="docItemContentWrapper_w5Le"><div class="docItemContent_WQsw"><div class="theme-doc-markdown markdown"><header><h1>Simulation Environment for VLA Testing</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-importance-of-simulation-in-vla-development">The Importance of Simulation in VLA Development<a href="#the-importance-of-simulation-in-vla-development" class="hash-link" aria-label="Direct link to The Importance of Simulation in VLA Development" title="Direct link to The Importance of Simulation in VLA Development" translate="no">​</a></h2>
+<p>Simulation environments are critical for developing, testing, and validating Vision-Language-Action (VLA) systems. They provide safe, controlled environments where complex robotic behaviors can be tested without risk to physical robots or humans. In the VLA pipeline, simulation enables rapid iteration and validation of the complete voice-to-vision-to-action workflow.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-framework-components">Simulation Framework Components<a href="#simulation-framework-components" class="hash-link" aria-label="Direct link to Simulation Framework Components" title="Direct link to Simulation Framework Components" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="physics-engine">Physics Engine<a href="#physics-engine" class="hash-link" aria-label="Direct link to Physics Engine" title="Direct link to Physics Engine" translate="no">​</a></h3>
+<p>The physics engine provides realistic simulation of physical interactions:</p>
+<ul>
+<li class=""><strong>Collision Detection</strong>: Accurate detection of object contacts and collisions</li>
+<li class=""><strong>Rigid Body Dynamics</strong>: Realistic movement and interaction of solid objects</li>
+<li class=""><strong>Soft Body Simulation</strong>: Deformable objects and materials</li>
+<li class=""><strong>Fluid Dynamics</strong>: Liquid simulation for pouring and other fluid-related tasks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rendering-system">Rendering System<a href="#rendering-system" class="hash-link" aria-label="Direct link to Rendering System" title="Direct link to Rendering System" translate="no">​</a></h3>
+<p>The rendering system creates realistic visual environments:</p>
+<ul>
+<li class=""><strong>Real-time Rendering</strong>: High-fidelity graphics for computer vision processing</li>
+<li class=""><strong>Sensor Simulation</strong>: Camera, LIDAR, and other sensor data generation</li>
+<li class=""><strong>Lighting Models</strong>: Realistic lighting for shadow and reflection effects</li>
+<li class=""><strong>Material Properties</strong>: Accurate surface properties for visual recognition</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="robot-simulation">Robot Simulation<a href="#robot-simulation" class="hash-link" aria-label="Direct link to Robot Simulation" title="Direct link to Robot Simulation" translate="no">​</a></h3>
+<p>Virtual robots with realistic kinematics and dynamics:</p>
+<ul>
+<li class=""><strong>Kinematic Models</strong>: Accurate joint and link relationships</li>
+<li class=""><strong>Dynamic Models</strong>: Realistic mass, inertia, and friction properties</li>
+<li class=""><strong>Sensor Simulation</strong>: Camera, IMU, force/torque sensors</li>
+<li class=""><strong>Actuator Models</strong>: Realistic motor and control response</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="popular-simulation-platforms">Popular Simulation Platforms<a href="#popular-simulation-platforms" class="hash-link" aria-label="Direct link to Popular Simulation Platforms" title="Direct link to Popular Simulation Platforms" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gazebo">Gazebo<a href="#gazebo" class="hash-link" aria-label="Direct link to Gazebo" title="Direct link to Gazebo" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Strengths</strong>: Physics accuracy, sensor simulation, ROS integration</li>
+<li class=""><strong>Use Cases</strong>: Academic research, robotics development, control algorithm testing</li>
+<li class=""><strong>Features</strong>: Multiple physics engines, realistic sensors, plugin architecture</li>
+<li class=""><strong>Integration</strong>: Native ROS/ROS 2 support</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="webots">Webots<a href="#webots" class="hash-link" aria-label="Direct link to Webots" title="Direct link to Webots" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Strengths</strong>: User-friendly interface, extensive robot models, built-in controllers</li>
+<li class=""><strong>Use Cases</strong>: Education, rapid prototyping, multi-robot simulation</li>
+<li class=""><strong>Features</strong>: Built-in development environment, physics simulation, programming interfaces</li>
+<li class=""><strong>Integration</strong>: Multiple programming languages, ROS support</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="isaac-sim-nvidia">Isaac Sim (NVIDIA)<a href="#isaac-sim-nvidia" class="hash-link" aria-label="Direct link to Isaac Sim (NVIDIA)" title="Direct link to Isaac Sim (NVIDIA)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Strengths</strong>: High-fidelity graphics, AI training capabilities, USD-based</li>
+<li class=""><strong>Use Cases</strong>: AI development, computer vision training, photorealistic simulation</li>
+<li class=""><strong>Features</strong>: RTX rendering, synthetic data generation, reinforcement learning</li>
+<li class=""><strong>Integration</strong>: Deep learning frameworks, ROS, Isaac ROS</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pybullet">PyBullet<a href="#pybullet" class="hash-link" aria-label="Direct link to PyBullet" title="Direct link to PyBullet" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Strengths</strong>: Fast physics simulation, machine learning integration</li>
+<li class=""><strong>Use Cases</strong>: Reinforcement learning, rapid prototyping, research</li>
+<li class=""><strong>Features</strong>: Real-time simulation, collision detection, constraint solving</li>
+<li class=""><strong>Integration</strong>: Python-based, machine learning frameworks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-specific-simulation-requirements">VLA-Specific Simulation Requirements<a href="#vla-specific-simulation-requirements" class="hash-link" aria-label="Direct link to VLA-Specific Simulation Requirements" title="Direct link to VLA-Specific Simulation Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-system-simulation">Vision System Simulation<a href="#vision-system-simulation" class="hash-link" aria-label="Direct link to Vision System Simulation" title="Direct link to Vision System Simulation" translate="no">​</a></h3>
+<p>For VLA systems, the simulation must accurately reproduce visual conditions:</p>
+<ul>
+<li class=""><strong>Camera Models</strong>: Realistic camera parameters (FOV, distortion, resolution)</li>
+<li class=""><strong>Image Quality</strong>: Appropriate noise, dynamic range, and artifacts</li>
+<li class=""><strong>Lighting Conditions</strong>: Various indoor/outdoor scenarios, time of day</li>
+<li class=""><strong>Occlusion Handling</strong>: Accurate representation of object visibility</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-system-simulation">Audio System Simulation<a href="#audio-system-simulation" class="hash-link" aria-label="Direct link to Audio System Simulation" title="Direct link to Audio System Simulation" translate="no">​</a></h3>
+<p>For voice processing components:</p>
+<ul>
+<li class=""><strong>Audio Capture</strong>: Microphone placement and characteristics</li>
+<li class=""><strong>Acoustic Environment</strong>: Room acoustics, echo, noise modeling</li>
+<li class=""><strong>Audio Quality</strong>: Appropriate noise levels and distortions</li>
+<li class=""><strong>Speech Recognition Testing</strong>: Various accents, speaking styles, background noise</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interaction-simulation">Interaction Simulation<a href="#interaction-simulation" class="hash-link" aria-label="Direct link to Interaction Simulation" title="Direct link to Interaction Simulation" translate="no">​</a></h3>
+<p>Complex object interactions for manipulation tasks:</p>
+<ul>
+<li class=""><strong>Grasping Simulation</strong>: Accurate contact modeling for robotic hands</li>
+<li class=""><strong>Object Dynamics</strong>: Realistic object behavior during manipulation</li>
+<li class=""><strong>Surface Properties</strong>: Friction, adhesion, and material properties</li>
+<li class=""><strong>Multi-object Interactions</strong>: Complex scene dynamics</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-environment-design">Simulation Environment Design<a href="#simulation-environment-design" class="hash-link" aria-label="Direct link to Simulation Environment Design" title="Direct link to Simulation Environment Design" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scene-creation">Scene Creation<a href="#scene-creation" class="hash-link" aria-label="Direct link to Scene Creation" title="Direct link to Scene Creation" translate="no">​</a></h3>
+<p>Creating realistic environments for VLA testing:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="indoor-environments">Indoor Environments<a href="#indoor-environments" class="hash-link" aria-label="Direct link to Indoor Environments" title="Direct link to Indoor Environments" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Home Settings</strong>: Kitchen, living room, bedroom layouts</li>
+<li class=""><strong>Office Environments</strong>: Desks, chairs, common office objects</li>
+<li class=""><strong>Laboratory Spaces</strong>: Equipment, tools, research materials</li>
+<li class=""><strong>Warehouse Settings</strong>: Shelves, boxes, industrial equipment</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="object-libraries">Object Libraries<a href="#object-libraries" class="hash-link" aria-label="Direct link to Object Libraries" title="Direct link to Object Libraries" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Common Objects</strong>: Cups, plates, books, tools</li>
+<li class=""><strong>Robotic Equipment</strong>: Grippers, sensors, mobile platforms</li>
+<li class=""><strong>Dynamic Objects</strong>: Moving obstacles, articulated objects</li>
+<li class=""><strong>Interactive Objects</strong>: Doors, drawers, switches</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-simulation">Sensor Simulation<a href="#sensor-simulation" class="hash-link" aria-label="Direct link to Sensor Simulation" title="Direct link to Sensor Simulation" translate="no">​</a></h3>
+<p>Accurate simulation of robotic sensors:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-sensors">Vision Sensors<a href="#vision-sensors" class="hash-link" aria-label="Direct link to Vision Sensors" title="Direct link to Vision Sensors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>RGB Cameras</strong>: Color image capture with realistic noise</li>
+<li class=""><strong>Depth Cameras</strong>: Depth information for 3D understanding</li>
+<li class=""><strong>Stereo Cameras</strong>: 3D reconstruction capabilities</li>
+<li class=""><strong>Event Cameras</strong>: High-speed, low-latency vision</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-sensors">Other Sensors<a href="#other-sensors" class="hash-link" aria-label="Direct link to Other Sensors" title="Direct link to Other Sensors" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>LIDAR</strong>: 3D environment mapping</li>
+<li class=""><strong>IMU</strong>: Inertial measurement for navigation</li>
+<li class=""><strong>Force/Torque</strong>: Grasp and manipulation feedback</li>
+<li class=""><strong>Tactile Sensors</strong>: Contact and texture information</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-scenarios">Testing Scenarios<a href="#testing-scenarios" class="hash-link" aria-label="Direct link to Testing Scenarios" title="Direct link to Testing Scenarios" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="basic-functionality-tests">Basic Functionality Tests<a href="#basic-functionality-tests" class="hash-link" aria-label="Direct link to Basic Functionality Tests" title="Direct link to Basic Functionality Tests" translate="no">​</a></h3>
+<p>Simple scenarios to validate individual components:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="voice-command-tests">Voice Command Tests<a href="#voice-command-tests" class="hash-link" aria-label="Direct link to Voice Command Tests" title="Direct link to Voice Command Tests" translate="no">​</a></h4>
+<ul>
+<li class="">Basic movement commands (&quot;Move forward&quot;, &quot;Turn left&quot;)</li>
+<li class="">Simple manipulation (&quot;Pick up the red cube&quot;)</li>
+<li class="">Navigation to specific locations</li>
+<li class="">Object identification and description</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-processing-tests">Vision Processing Tests<a href="#vision-processing-tests" class="hash-link" aria-label="Direct link to Vision Processing Tests" title="Direct link to Vision Processing Tests" translate="no">​</a></h4>
+<ul>
+<li class="">Object detection in various lighting conditions</li>
+<li class="">Spatial relationship understanding</li>
+<li class="">Scene segmentation and analysis</li>
+<li class="">Dynamic object tracking</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="action-execution-tests">Action Execution Tests<a href="#action-execution-tests" class="hash-link" aria-label="Direct link to Action Execution Tests" title="Direct link to Action Execution Tests" translate="no">​</a></h4>
+<ul>
+<li class="">Basic navigation tasks</li>
+<li class="">Simple manipulation sequences</li>
+<li class="">Safety constraint enforcement</li>
+<li class="">Error recovery procedures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="complex-scenario-tests">Complex Scenario Tests<a href="#complex-scenario-tests" class="hash-link" aria-label="Direct link to Complex Scenario Tests" title="Direct link to Complex Scenario Tests" translate="no">​</a></h3>
+<p>Advanced scenarios that test the complete VLA pipeline:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-step-commands">Multi-Step Commands<a href="#multi-step-commands" class="hash-link" aria-label="Direct link to Multi-Step Commands" title="Direct link to Multi-Step Commands" translate="no">​</a></h4>
+<ul>
+<li class="">&quot;Go to the kitchen and bring me a cup&quot;</li>
+<li class="">&quot;Find the red ball and place it in the blue box&quot;</li>
+<li class="">&quot;Move the obstacle and then continue forward&quot;</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="context-aware-tasks">Context-Aware Tasks<a href="#context-aware-tasks" class="hash-link" aria-label="Direct link to Context-Aware Tasks" title="Direct link to Context-Aware Tasks" translate="no">​</a></h4>
+<ul>
+<li class="">Tasks requiring scene understanding</li>
+<li class="">Commands that depend on visual context</li>
+<li class="">Adaptive behavior based on environment</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="human-robot-interaction">Human-Robot Interaction<a href="#human-robot-interaction" class="hash-link" aria-label="Direct link to Human-Robot Interaction" title="Direct link to Human-Robot Interaction" translate="no">​</a></h4>
+<ul>
+<li class="">Socially appropriate robot behavior</li>
+<li class="">Response to human commands and gestures</li>
+<li class="">Safety around humans</li>
+<li class="">Natural interaction patterns</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation-and-verification">Validation and Verification<a href="#validation-and-verification" class="hash-link" aria-label="Direct link to Validation and Verification" title="Direct link to Validation and Verification" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-metrics">Performance Metrics<a href="#performance-metrics" class="hash-link" aria-label="Direct link to Performance Metrics" title="Direct link to Performance Metrics" translate="no">​</a></h3>
+<p>Quantitative measures for VLA system performance:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="accuracy-metrics">Accuracy Metrics<a href="#accuracy-metrics" class="hash-link" aria-label="Direct link to Accuracy Metrics" title="Direct link to Accuracy Metrics" translate="no">​</a></h4>
+<ul>
+<li class="">Command interpretation accuracy</li>
+<li class="">Object detection and recognition rates</li>
+<li class="">Action execution success rates</li>
+<li class="">Navigation precision</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="efficiency-metrics">Efficiency Metrics<a href="#efficiency-metrics" class="hash-link" aria-label="Direct link to Efficiency Metrics" title="Direct link to Efficiency Metrics" translate="no">​</a></h4>
+<ul>
+<li class="">Processing time for command interpretation</li>
+<li class="">Action sequence execution time</li>
+<li class="">Resource utilization (CPU, memory, network)</li>
+<li class="">Real-time performance compliance</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="robustness-metrics">Robustness Metrics<a href="#robustness-metrics" class="hash-link" aria-label="Direct link to Robustness Metrics" title="Direct link to Robustness Metrics" translate="no">​</a></h4>
+<ul>
+<li class="">Performance under varying conditions</li>
+<li class="">Error recovery success rates</li>
+<li class="">System stability over time</li>
+<li class="">Handling of unexpected situations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="comparison-with-physical-robots">Comparison with Physical Robots<a href="#comparison-with-physical-robots" class="hash-link" aria-label="Direct link to Comparison with Physical Robots" title="Direct link to Comparison with Physical Robots" translate="no">​</a></h3>
+<p>Validating simulation results against physical robot performance:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="domain-randomization">Domain Randomization<a href="#domain-randomization" class="hash-link" aria-label="Direct link to Domain Randomization" title="Direct link to Domain Randomization" translate="no">​</a></h4>
+<ul>
+<li class="">Varying simulation parameters to improve transfer</li>
+<li class="">Training on diverse simulated environments</li>
+<li class="">Testing robustness to domain shift</li>
+<li class="">Adapting to real-world conditions</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-identification">System Identification<a href="#system-identification" class="hash-link" aria-label="Direct link to System Identification" title="Direct link to System Identification" translate="no">​</a></h4>
+<ul>
+<li class="">Calibrating simulation to match physical robot</li>
+<li class="">Identifying key parameters for accurate simulation</li>
+<li class="">Validating dynamics models</li>
+<li class="">Tuning for realistic behavior</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration-with-development-workflow">Integration with Development Workflow<a href="#integration-with-development-workflow" class="hash-link" aria-label="Direct link to Integration with Development Workflow" title="Direct link to Integration with Development Workflow" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="continuous-integration">Continuous Integration<a href="#continuous-integration" class="hash-link" aria-label="Direct link to Continuous Integration" title="Direct link to Continuous Integration" translate="no">​</a></h3>
+<ul>
+<li class="">Automated simulation testing for VLA systems</li>
+<li class="">Regression testing for new features</li>
+<li class="">Performance benchmarking</li>
+<li class="">Safety validation pipelines</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="development-iteration">Development Iteration<a href="#development-iteration" class="hash-link" aria-label="Direct link to Development Iteration" title="Direct link to Development Iteration" translate="no">​</a></h3>
+<ul>
+<li class="">Rapid prototyping in simulation</li>
+<li class="">Algorithm development and testing</li>
+<li class="">Multi-robot coordination testing</li>
+<li class="">Safety system validation</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-simulation-techniques">Advanced Simulation Techniques<a href="#advanced-simulation-techniques" class="hash-link" aria-label="Direct link to Advanced Simulation Techniques" title="Direct link to Advanced Simulation Techniques" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="synthetic-data-generation">Synthetic Data Generation<a href="#synthetic-data-generation" class="hash-link" aria-label="Direct link to Synthetic Data Generation" title="Direct link to Synthetic Data Generation" translate="no">​</a></h3>
+<p>Creating large datasets for training VLA components:</p>
+<ul>
+<li class=""><strong>Diverse Environments</strong>: Various lighting, textures, and layouts</li>
+<li class=""><strong>Augmented Reality</strong>: Combining real and synthetic data</li>
+<li class=""><strong>Domain Randomization</strong>: Varying parameters for robustness</li>
+<li class=""><strong>Label Generation</strong>: Automatic annotation for training data</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reinforcement-learning-integration">Reinforcement Learning Integration<a href="#reinforcement-learning-integration" class="hash-link" aria-label="Direct link to Reinforcement Learning Integration" title="Direct link to Reinforcement Learning Integration" translate="no">​</a></h3>
+<p>Training VLA components through simulation:</p>
+<ul>
+<li class=""><strong>Reward Function Design</strong>: Defining objectives for learning</li>
+<li class=""><strong>Environment Randomization</strong>: Improving generalization</li>
+<li class=""><strong>Transfer Learning</strong>: From simulation to reality</li>
+<li class=""><strong>Human Feedback Integration</strong>: Learning from demonstrations</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenges-and-limitations">Challenges and Limitations<a href="#challenges-and-limitations" class="hash-link" aria-label="Direct link to Challenges and Limitations" title="Direct link to Challenges and Limitations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-reality-gap">The Reality Gap<a href="#the-reality-gap" class="hash-link" aria-label="Direct link to The Reality Gap" title="Direct link to The Reality Gap" translate="no">​</a></h3>
+<ul>
+<li class="">Differences between simulation and reality</li>
+<li class="">Dynamics modeling inaccuracies</li>
+<li class="">Sensor simulation limitations</li>
+<li class="">Material property approximations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="computational-requirements">Computational Requirements<a href="#computational-requirements" class="hash-link" aria-label="Direct link to Computational Requirements" title="Direct link to Computational Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">High-fidelity simulation resource needs</li>
+<li class="">Real-time performance challenges</li>
+<li class="">Large-scale environment complexity</li>
+<li class="">Multi-robot simulation scaling</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation-complexity">Validation Complexity<a href="#validation-complexity" class="hash-link" aria-label="Direct link to Validation Complexity" title="Direct link to Validation Complexity" translate="no">​</a></h3>
+<ul>
+<li class="">Ensuring simulation accuracy</li>
+<li class="">Validating complex multi-modal interactions</li>
+<li class="">Testing safety-critical behaviors</li>
+<li class="">Managing simulation-to-reality transfer</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="simulation-design">Simulation Design<a href="#simulation-design" class="hash-link" aria-label="Direct link to Simulation Design" title="Direct link to Simulation Design" translate="no">​</a></h3>
+<ul>
+<li class="">Start simple and increase complexity gradually</li>
+<li class="">Validate simulation components individually</li>
+<li class="">Use domain knowledge to guide randomization</li>
+<li class="">Maintain simulation-physical robot correspondences</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-strategy">Testing Strategy<a href="#testing-strategy" class="hash-link" aria-label="Direct link to Testing Strategy" title="Direct link to Testing Strategy" translate="no">​</a></h3>
+<ul>
+<li class="">Test components individually before integration</li>
+<li class="">Use diverse scenarios for validation</li>
+<li class="">Implement comprehensive logging</li>
+<li class="">Create repeatable test environments</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<p>With a comprehensive understanding of simulation environments, the next section will explore the complete capstone project implementation. We&#x27;ll see how to integrate all VLA components in a realistic simulation environment and evaluate the performance of the complete autonomous humanoid system.</p></div><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Capstone — The Autonomous Humanoid</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/agentic-humanoid-robotics-book/docs/chapter-3-autonomous-humanoid/capstone-project"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Complete Autonomous Humanoid Capstone Project</div></a></nav></div></div></div></div></article></div></div></div></div></main></div></div></main></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/agentic-humanoid-robotics-book/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/agentic-humanoid-robotics-book/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Autonomous Humanoid Robotics & Physical AI Handbook. Architected by Sain Bux.</div></div></div></footer></div>
+</body>
+</html>
