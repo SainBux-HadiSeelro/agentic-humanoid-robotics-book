@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: 'https://sainbux-hadiseelro.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-ai-robotics-handbook/',
+  baseUrl: '/agentic-humanoid-robotics-book/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-robotics-handbook', // Usually your repo name.
+  organizationName: 'SainBux-HadiSeelro', // Usually your GitHub org/user name.
+  projectName: 'agentic-humanoid-robotics-book', // Usually your repo name.
   deploymentBranch: 'gh-pages', // The branch to deploy to
   trailingSlash: false, // Set to true for /docs/ urls, false for /docs urls
 
@@ -119,7 +119,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -163,12 +163,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Robotics and AI Development Course. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Autonomous Humanoid Robotics & Physical AI Handbook. Architected by Sain Bux.`,
     },
     prism: {
       theme: prismThemes.github,

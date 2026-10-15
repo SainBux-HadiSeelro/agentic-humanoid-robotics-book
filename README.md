@@ -5,7 +5,7 @@
 # 🤖 Autonomous Humanoid Robotics & Physical AI Handbook
 ### Engineered with an In-Browser Agentic Multi-Agent Control Suite & Live 2D LiDAR Simulator
 
-[![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00D2FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://your-username.github.io/physical-ai-robotics-handbook/)
+[![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00D2FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/)
 [![Agentic AI](https://img.shields.io/badge/Architecture-Multi--Agent_Swarm-002B49?style=for-the-badge&logo=openai&logoColor=00D2FF)](#-interactive-agentic-mission-console)
 [![ROS 2](https://img.shields.io/badge/Robotics-ROS_2_Humble-0077B6?style=for-the-badge&logo=ros&logoColor=white)](https://docs.ros.org/)
 [![NVIDIA Isaac](https://img.shields.io/badge/Simulation-NVIDIA_Isaac_Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/isaac-sim)
@@ -93,8 +93,8 @@ Get the entire handbook and interactive simulation suite running locally in unde
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/physical-ai-robotics-handbook.git
-cd physical-ai-robotics-handbook
+git clone https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book.git
+cd agentic-humanoid-robotics-book
 ```
 
 ### 2. Install Dependencies
@@ -109,7 +109,7 @@ npm --prefix frontend_book install
 npm run dev
 ```
 
-Visit **`http://localhost:3000/physical-ai-robotics-handbook/`** in your browser to explore the handbook, test the mission console, and play with the autonomous simulator!
+Visit **`http://localhost:3000/agentic-humanoid-robotics-book/`** in your browser to explore the handbook, test the mission console, and play with the autonomous simulator!
 
 ---
 
