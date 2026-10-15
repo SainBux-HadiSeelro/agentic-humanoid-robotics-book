@@ -5,13 +5,18 @@
 # 🤖 Autonomous Humanoid Robotics & Physical AI Handbook
 ### Engineered with an In-Browser Agentic Multi-Agent Control Suite & Live 2D LiDAR Simulator
 
-[![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00D2FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/)
+[![Live Demo](https://img.shields.io/badge/Live_Book-Vercel_Deployment-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://agentic-humanoid-robotics-book.vercel.app/)
+[![GitHub Pages](https://img.shields.io/badge/Mirror-GitHub_Pages-00D2FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/)
 [![Agentic AI](https://img.shields.io/badge/Architecture-Multi--Agent_Swarm-002B49?style=for-the-badge&logo=openai&logoColor=00D2FF)](#-interactive-agentic-mission-console)
 [![ROS 2](https://img.shields.io/badge/Robotics-ROS_2_Humble-0077B6?style=for-the-badge&logo=ros&logoColor=white)](https://docs.ros.org/)
 [![NVIDIA Isaac](https://img.shields.io/badge/Simulation-NVIDIA_Isaac_Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/isaac-sim)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](LICENSE)
 
 <br />
+
+### 🌐 **Live Interactive Website:**  
+👉 **[https://agentic-humanoid-robotics-book.vercel.app/](https://agentic-humanoid-robotics-book.vercel.app/)**  
+*(Featuring Real-Time In-Browser Multi-Agent Mission Console & 2D LiDAR Raycast Simulator)*
 
 **Authored & Architected by:**  
 ### **SAIN BUX**

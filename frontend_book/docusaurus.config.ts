@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here (dynamically detects Vercel vs GitHub Pages)
-  url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sainbux-hadiseelro.github.io',
+  url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://agentic-humanoid-robotics-book.vercel.app',
   // On Vercel, the site is served from root ('/'), on GitHub Pages it is served under repo name subpath
   baseUrl: process.env.VERCEL ? '/' : (process.env.BASE_URL || '/agentic-humanoid-robotics-book/'),
 
