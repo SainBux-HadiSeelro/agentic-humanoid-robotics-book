@@ -14,11 +14,10 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://sainbux-hadiseelro.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/agentic-humanoid-robotics-book/',
+  // Set the production url of your site here (dynamically detects Vercel vs GitHub Pages)
+  url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sainbux-hadiseelro.github.io',
+  // On Vercel, the site is served from root ('/'), on GitHub Pages it is served under repo name subpath
+  baseUrl: process.env.VERCEL ? '/' : (process.env.BASE_URL || '/agentic-humanoid-robotics-book/'),
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
