@@ -4,8 +4,8 @@
   <ShortName>Autonomous Humanoid Robotics &amp; Physical AI</ShortName>
   <Description>Search Autonomous Humanoid Robotics &amp; Physical AI</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/img/book-logo.svg</Image>
-  <Url type="text/html" method="get" template="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/opensearch.xml" />
-  <moz:SearchForm>https://sainbux-hadiseelro.github.io/agentic-humanoid-robotics-book/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://agentic-humanoid-robotics-book.vercel.app/agentic-humanoid-robotics-book/img/book-logo.svg</Image>
+  <Url type="text/html" method="get" template="https://agentic-humanoid-robotics-book.vercel.app/agentic-humanoid-robotics-book/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://agentic-humanoid-robotics-book.vercel.app/agentic-humanoid-robotics-book/opensearch.xml" />
+  <moz:SearchForm>https://agentic-humanoid-robotics-book.vercel.app/agentic-humanoid-robotics-book/</moz:SearchForm>
 </OpenSearchDescription>
