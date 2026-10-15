@@ -1,0 +1,32 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-button-background-color);
+  color: var(--ifm-button-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 0.5rem;
+}
+
+.themeToggle:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  transform: scale(1.05);
+}
+
+.themeToggleInner {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.themeToggle.light {
+  color: #fbbf24; /* Tailwind yellow-400 */
+}
+
+.themeToggle.dark {
+  color: #93c5fd; /* Tailwind blue-300 */
+}

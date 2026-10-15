@@ -1,0 +1,10 @@
+{
+  "name": "hackathon-1-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend_book run dev",
+    "start": "npm --prefix frontend_book start",
+    "build": "npm --prefix frontend_book run build",
+    "typecheck": "npm --prefix frontend_book run typecheck"
+  }
+}

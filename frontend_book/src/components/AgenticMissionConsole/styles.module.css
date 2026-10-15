@@ -1,0 +1,259 @@
+.consoleWrapper {
+  margin: 3.5rem auto;
+  max-width: 1100px;
+  background: #001524;
+  border: 2px solid #00D2FF;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px -10px rgba(0, 43, 73, 0.4), 0 0 30px rgba(0, 210, 255, 0.25);
+  overflow: hidden;
+  font-family: 'Inter', monospace, sans-serif;
+}
+
+.consoleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00223A;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1.5px solid rgba(0, 210, 255, 0.3);
+}
+
+.windowControls {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dotRed { background: #EF4444; }
+.dotYellow { background: #F59E0B; }
+.dotGreen { background: #10B981; }
+
+.consoleTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #00D2FF;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statusLive {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.liveDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 6px #10B981;
+}
+
+.consoleBody {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 860px) {
+  .consoleBody {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Control Panel */
+.controlPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #94A3B8;
+  margin-bottom: 0.4rem;
+}
+
+.presetSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.presetBtn {
+  background: #00223A;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+  color: #E2E8F0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.presetBtn:hover {
+  border-color: #00D2FF;
+  background: #003354;
+  color: #FFFFFF;
+}
+
+.presetBtnActive {
+  background: #003354;
+  border-color: #00D2FF;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.3);
+  color: #00D2FF;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.customInput {
+  flex-grow: 1;
+  background: #001E33;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.customInput:focus {
+  border-color: #00D2FF;
+  box-shadow: 0 0 8px rgba(0, 210, 255, 0.3);
+}
+
+.runBtn {
+  background: linear-gradient(135deg, #0077B6 0%, #00D2FF 100%);
+  color: #001524;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.runBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.5);
+}
+
+.runBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Agent Swarm Pipeline Status */
+.agentPipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.agentStep {
+  background: #001E33;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.6rem 0.4rem;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #94A3B8;
+  transition: all 0.3s ease;
+}
+
+.agentStepActive {
+  border-color: #00D2FF;
+  background: rgba(0, 210, 255, 0.15);
+  color: #00D2FF;
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.25);
+}
+
+.agentStepComplete {
+  border-color: #10B981;
+  background: rgba(16, 185, 129, 0.12);
+  color: #10B981;
+}
+
+/* Terminal Log Output */
+.terminalPanel {
+  background: #000E1A;
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  border-radius: 8px;
+  padding: 1rem;
+  height: 380px;
+  overflow-y: auto;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.terminalPanel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminalPanel::-webkit-scrollbar-thumb {
+  background: #004D7A;
+  border-radius: 4px;
+}
+
+.logEntry {
+  margin-bottom: 0.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logTime { color: #64748B; margin-right: 0.5rem; }
+.logAgent { color: #00D2FF; font-weight: 700; margin-right: 0.4rem; }
+.logText { color: #E2E8F0; }
+.logSuccess { color: #10B981; font-weight: 600; }
+.logWarn { color: #F59E0B; }
+.logCode {
+  background: #001A2F;
+  border-left: 2px solid #00D2FF;
+  padding: 0.3rem 0.6rem;
+  margin: 0.3rem 0;
+  color: #93C5FD;
+  font-size: 0.75rem;
+  border-radius: 0 4px 4px 0;
+}

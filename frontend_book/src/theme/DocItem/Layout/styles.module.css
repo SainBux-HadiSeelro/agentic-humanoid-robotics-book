@@ -1,0 +1,70 @@
+.docItemWrapper {
+  padding: 1.5rem 0 3rem;
+  width: 100%;
+}
+
+.articleCard {
+  background: #FFFFFF;
+  border: 2px solid rgba(0, 210, 255, 0.35);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 12px 35px -8px rgba(0, 43, 73, 0.08), 0 0 25px rgba(0, 210, 255, 0.12);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+[data-theme='dark'] .articleCard {
+  background: #031B32;
+  border: 2px solid rgba(0, 210, 255, 0.35);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 210, 255, 0.2);
+}
+
+/* Corner Navy & Cyan Accent Waves Matching the Card */
+.articleCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #002B49 0%, #0077B6 40%, #00D2FF 100%);
+}
+
+.articleCard::after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.docItemContainer {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.docItemCol {
+  flex: 1;
+  min-width: 0;
+}
+
+.docItemContentWrapper {
+  max-width: 100%;
+}
+
+.docItemContent {
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .articleCard {
+    padding: 1.5rem 1.25rem;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,187 @@
+.curriculumSection {
+  padding: 5rem 1rem;
+  background: var(--ifm-background-color);
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.sectionBadge {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(0, 43, 73, 0.08);
+  color: #0077B6;
+  border: 1.5px solid rgba(0, 210, 255, 0.4);
+  margin-bottom: 0.75rem;
+}
+
+[data-theme='dark'] .sectionBadge {
+  background: rgba(0, 210, 255, 0.12);
+  color: #00D2FF;
+}
+
+.sectionTitle {
+  font-family: 'Outfit', 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: #002B49;
+}
+
+[data-theme='dark'] .sectionTitle {
+  color: #FFFFFF;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+[data-theme='dark'] .sectionSubtitle {
+  color: #CBD5E1;
+}
+
+.moduleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .moduleGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.moduleCard {
+  background: #FFFFFF;
+  border: 2px solid rgba(0, 43, 73, 0.08);
+  border-radius: 16px;
+  padding: 2.25rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 43, 73, 0.05);
+}
+
+[data-theme='dark'] .moduleCard {
+  background: #041B32;
+  border: 2px solid rgba(0, 210, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.moduleCard:hover {
+  transform: translateY(-5px);
+  border-color: #00D2FF;
+  box-shadow: 0 16px 36px -10px rgba(0, 43, 73, 0.15), 0 0 25px rgba(0, 210, 255, 0.3);
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.moduleNumber {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  background: #002B49;
+  color: #00D2FF;
+}
+
+.moduleIcon {
+  font-size: 1.85rem;
+}
+
+.moduleTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  color: #002B49;
+}
+
+[data-theme='dark'] .moduleTitle {
+  color: #FFFFFF;
+}
+
+.moduleDescription {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+[data-theme='dark'] .moduleDescription {
+  color: #CBD5E1;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.75rem;
+}
+
+.tagPill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: #F0F9FF;
+  color: #0077B6;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+[data-theme='dark'] .tagPill {
+  background: #031424;
+  color: #00D2FF;
+  border-color: rgba(0, 210, 255, 0.25);
+}
+
+.exploreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0077B6;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+  margin-top: auto;
+}
+
+[data-theme='dark'] .exploreLink {
+  color: #00D2FF;
+}
+
+.exploreLink:hover {
+  gap: 0.8rem;
+  color: #00D2FF;
+  text-decoration: none;
+}
